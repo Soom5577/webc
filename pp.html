@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <ul>
+            <li> <a href="" class="a1"> صفحة الرئسية </a> </li>
+            <li> <a href="" class="a1"> الموضوع </a> </li>
+            <li> <a href="" class="a1"> صور </a> </li>
+            <li> <a href="" class="a1"> تواصل معنا </a> </li>
+        </ul>
+    </div>
+   <h1 id="t1">
+    الخضورات و الفواكة
+   </h1>
+    <div class="fell-card">
+        <div class="crad">
+            <img class="food-1" src="img/موز.png" alt="">
+            <h1> انواع الخضورات </h1>
+            <p>
+                جرب هذا النوع يحتوي على الكثير من البروتونات
+            </p>
+        </div>
+        <div class="crad">
+            <img class="food-2" src="img/برتقال.png" alt="">
+            <h1 id="g1"> انواع الخضورات </h1>
+            <p id="g2">
+                جرب هذا النوع يحتوي على الكثير من البروتونات
+            </p>
+        </div>
+        <div class="crad">
+            <img class="food-3" src="img/تفاح.png" alt="">
+            <h1> انواع الخضورات </h1>
+            <p>
+                جرب هذا النوع يحتوي على الكثير من البروتونات
+            </p>
+        </div>
+    </div>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        height: 100vh;
+        background: url(img/Large\ Wallpaper\ Variety\ Of\ Fruits\ And\ Vegetables\ Covered\ In\ Backgrounds\ _\ JPG\ Free\ Download\ -\ Pikbest.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .navbar {
+        display: block;
+        height: 100px;
+        background-color: firebrick;
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        position: relative;
+        top: 20%;
+    }
+    li{
+        list-style-type: none;
+    }
+    a {
+        color: black;
+        font-size: 30px;
+        margin-left: 30px;
+        text-decoration: none;
+    }
+    #t1 {
+        font-size: 50px;
+        text-align: center;
+        color: #fff;
+        position: relative;
+        top: 50px;
+    }
+    .fell-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 100px;
+        position: relative;
+        top: 80px;
+    }
+    .crad {
+        width: 300px;
+        height: 400px;
+        border: 5px solid black;
+        background-color: rgb(201, 240, 240);
+        border-radius: 20px;
+        text-align: center;
+        transition: .3s ease-in;
+    }
+    .crad:hover {
+        transform: scale(1.1);
+    }
+    .food-1 {
+        width: 200px;
+        position: relative;
+        top: 30px;
+    }
+    .food-2 {
+        width: 300px;
+        position: relative;
+        top: 60px;
+    }
+    .food-3 {
+        width: 200px;
+        position: relative;
+        top: 30px;
+    }
+    #g1 {
+        position: relative;
+        top: 60px;
+    }
+    #g2      {
+        position: relative;
+        top: 60px;
+    }
+    @media (max-width: 768px) {
+        body {
+        height: 300vh;
+        background: url(img/Large\ Wallpaper\ Variety\ Of\ Fruits\ And\ Vegetables\ Covered\ In\ Backgrounds\ _\ JPG\ Free\ Download\ -\ Pikbest.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+        a {
+        font-size: 20px;
+        margin-left: 30px;
+        text-decoration: none;
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        position: relative;
+        top: 30%;
+    }
+    }
+    @media (max-width: 430px) {
+        a {
+        font-size: 15px;
+        margin-left: 20px;
+        text-decoration: none;
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        position: relative;
+        top: 30%;
+    }
+    }
+    @media (max-width: 375px) {
+        .crad {
+        width: 300px;
+        height: 400px;
+        border: 5px solid black;
+        background-color: rgb(201, 240, 240);
+        border-radius: 20px;
+        text-align: center;
+        transition: .3s ease-in;
+        transform: scale(0.8);
+    }
+    .crad:hover {
+        transform: scale(0.9);
+    }
+    .fell-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        position: relative;
+        top: 80px;
+    }
+    }
+    @media (max-width: 1024px) {
+        body {
+        height: 260vh;
+        background: url(img/Large\ Wallpaper\ Variety\ Of\ Fruits\ And\ Vegetables\ Covered\ In\ Backgrounds\ _\ JPG\ Free\ Download\ -\ Pikbest.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    }
+</style>
+</body>
+</html>
